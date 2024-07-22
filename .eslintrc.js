@@ -2,9 +2,12 @@ module.exports = {
     'env': {
       'browser': true,
       'es2021': true,
-      'node': true
+      'node': true,
+      "jest": true
     },
-    'extends': 'eslint:recommended',
+    'extends': ['eslint:recommended',
+    "plugin:jest/recommended"],
+
     'overrides': [
       {
         'files': ['**/*/*.test.js'],
@@ -17,5 +20,8 @@ module.exports = {
       'ecmaVersion': 'latest',
       'sourceType': 'module'
     },
-    'rules': {}
-  }
+    "rules": {
+    "no-console": "off"
+  },
+  "plugins": ["jest"]
+}
