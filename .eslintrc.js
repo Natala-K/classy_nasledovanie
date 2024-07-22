@@ -1,4 +1,5 @@
 module.exports = {
+
     'env': {
       'browser': true,
       'es2021': true,
@@ -23,5 +24,6 @@ module.exports = {
     "rules": {
     "no-console": "off"
   },
-  "plugins": ["jest"]
+  "plugins": ["jest"],
+  
 }

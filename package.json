@@ -5,7 +5,9 @@
   "scripts": {
     "test": "jest --coverage",
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
   },
   "keywords": [],
   "author": "",
